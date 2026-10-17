@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Little Memories ☁️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(
+                135deg,
+                #dff6ff,
+                #b9e8ff,
+                #edfaff
+            );
+            color: #315b7d;
+            text-align: center;
+            padding: 30px 15px;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .memory-card {
+            background: rgba(255, 255, 255, 0.75);
+            max-width: 320px;
+            margin: 25px auto;
+            padding: 18px;
+            border-radius: 22px;
+            box-shadow: 0 8px 25px rgba(79, 151, 190, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .memory-card:hover {
+            transform: translateY(-7px) rotate(-1deg);
+        }
+
+        .memory-card img {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            border-radius: 15px;
+            border: 5px solid white;
+            box-shadow: 0 4px 12px #b6dff2;
+        }
+
+        .sticker {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .caption {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 14px 0 5px;
+        }
+
+        .emoji {
+            font-size: 28px;
+            margin: 18px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        button {
+            background: #79c8f0;
+            color: white;
+            border: none;
+            padding: 13px 22px;
+            margin: 10px;
+            border-radius: 25px;
+            font-size: 15px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px #a4d9f2;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #56afe0;
+            transform: scale(1.05);
+        }
+
+        #note {
+            display: none;
+            max-width: 330px;
+            margin: 20px auto;
+            padding: 22px;
+            background: white;
+            border-radius: 20px;
+            line-height: 1.8;
+            box-shadow: 0 5px 20px #b5def0;
+            animation: appear 0.7s ease;
+        }
+
+        .back {
+            display: inline-block;
+            text-decoration: none;
+            color: #315b7d;
+            background: rgba(255,255,255,0.7);
+            padding: 12px 20px;
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="emoji">☁️ 🦋 ✨</div>
+
+    <h1>Our Little Memories 📸</h1>
+
+    <p class="subtitle">
+        A tiny collection of moments that make me smile 🩵
+    </p>
+
+    <div class="memory-card">
+        <div class="sticker">🌸</div>
+
+        <img src="images/yu.jpeg" alt="Our special memory">
+
+        <p class="caption">Little moments, big memories 🩵</p>
+    </div>
+
+    <div class="memory-card">
+        <div class="sticker">🫶</div>
+        <img src="WhatsApp Image 2026-10-17 at 10.13.09 PM.jpeg"our special">
+        <p class="caption">Some people make ordinary days special.</p>
+    </div>
+
+    <div class="memory-card">
+        <div class="sticker">⭐</div>
+        <img src="image3/image.png" alt="our">
+        <p class="caption">A little happiness saved forever.</p>
+    </div>
+
+    <div class="memory-card">
+        <div class="sticker">🦋</div>
+        <img src="image4/image.png" alt="mine">
+        <p class="caption">More beautiful memories are yet to come!</p>
+    </div>
+
+    <button onclick="showNote()">A Little Note 💌</button>
+
+    <div id="note">
+        <div style="font-size: 35px;">💌☁️</div>
+
+        <h3>For My Special Friend 🩵</h3>
+
+        <p>
+            Some friendships make life a little brighter,
+            just like sunshine after rain. ☀️
+        </p>
+
+        <p>
+            No matter how ordinary a day feels,
+            I hope you always find a little reason to smile.
+        </p>
+
+        <p>Sending you a pocket full of sky-blue happiness! 🦋</p>
+    </div>
+
+    <br>
+
+    <a class="back" href="index.html">← Back to Welcome ☁️</a>
+
+    <script>
+        function showNote() {
+            const note = document.getElementById("note");
+
+            if (note.style.display === "block") {
+                note.style.display = "none";
+            } else {
+                note.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
